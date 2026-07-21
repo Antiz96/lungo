@@ -2,7 +2,7 @@ lungo(1) ["Lungo 0.0.1" ["Lungo Manual"]]
 
 # NAME
 
-Lungo - A simple systray applet to prevent your system from going idle or sleeping.
+Lungo - A simple systray applet to prevent your system from going idle or sleeping on demand.
 
 # DESCRIPTION
 

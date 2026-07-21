@@ -1,4 +1,4 @@
-//! Lungo - A simple systray applet to prevent your system from going idle or sleeping.
+//! Lungo - A simple systray applet to prevent your system from going idle or sleeping on demand.
 
 use clap::Parser;
 

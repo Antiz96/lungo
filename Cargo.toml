@@ -3,7 +3,7 @@ name = "lungo"
 version = "0.0.1"
 authors = ["Robin Candau <robincandau@protonmail.com>"]
 edition = "2024"
-description = "A simple systray applet to prevent your system from going idle or sleeping"
+description = "A simple systray applet to prevent your system from going idle or sleeping on demand"
 license = "GPL-3.0-or-later"
 
 [dependencies]

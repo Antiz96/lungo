@@ -2,7 +2,7 @@
 
 pub fn show_help() {
     println!(
-        "Lungo - A simple systray applet to prevent your system from going idle or sleeping."
+        "Lungo - A simple systray applet to prevent your system from going idle or sleeping on demand."
     );
     println!();
     println!("Run the `lungo` command to start the systray applet.");

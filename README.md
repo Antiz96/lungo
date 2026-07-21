@@ -11,7 +11,7 @@
 
 ## Description
 
-A simple systray applet to prevent your system from going idle or sleeping.
+A simple systray applet to prevent your system from going idle or sleeping on demand.
 
 Prevent your machine from going idle or sleeping on demand, simply by cliking the systray applet to toggle it on and off.  
 The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
