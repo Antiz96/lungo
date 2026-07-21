@@ -5,7 +5,12 @@ pub fn show_help() {
         "Lungo - A simple systray applet to prevent your system from going idle or sleeping on demand."
     );
     println!();
-    println!("Run the `lungo` command to start the systray applet.");
+    println!("Run `lungo` to start the systray applet.");
+    println!();
+    println!("Simply click on the systray applet to toggle it on and off.");
+    println!(
+        "The icon automatically changes to reflect the current state (\"empty cup\" icon if off, \"hot cup\" icon if on)."
+    );
     println!();
     println!("Options:");
     println!("  -h, --help     Display this message");
