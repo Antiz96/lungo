@@ -24,7 +24,7 @@ Lungo is:
 - Distribution and desktop environment agnostic: Only requires either `systemd-logind` or `elogind`, not tied to any specific graphical / desktop environment.
 - Crash and memory safe: Uses a `logind` file descriptor lock (which is automatically released by the kernel on crash or kill), written in a memory safe language.
 
-Motivation:
+**Motivation:**
 
 This project is generally inspired by [caffeine](https://launchpad.net/caffeine) / [caffeine-ng](https://codeberg.org/WhyNotHugo/caffeine-ng) (hence the [lungo](https://en.wikipedia.org/wiki/Lungo) name, as a reference) with some parts of the implementation inspired by [caffeine-applet](https://github.com/codevardhan/caffeine-applet).  
 The main motivation was to make a simple and minimal / "self-sufficient" implementation of a "caffeine" systray applet, with no arguably complex or "superfluous" mechanism / features and numerous runtime dependencies (unlike `caffeine` / `caffeine-ng`), **and** that isn't tied to a specific desktop / graphical environment (unlike `caffeine-applet` or the [caffeine gnome shell extension](https://github.com/eonpatapon/gnome-shell-extension-caffeine)).
