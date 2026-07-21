@@ -7,5 +7,3 @@ All notable changes to this project will be documented in this file.
 ### Features
 
 - *(init)* Initial commit ([#2](https://github.com/Antiz96/lungo/pull/2)) - ([6680068](https://github.com/Antiz96/lungo/commit/6680068c1d4d2cdcc557dcc770382c6009d5a751)) by @Antiz96
-
-# Changelog
