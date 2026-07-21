@@ -13,14 +13,21 @@
 
 A simple systray applet to prevent your system from going idle or sleeping on demand.
 
-Prevent your machine from going idle or sleeping on demand, simply by cliking the systray applet to toggle it on and off.  
-The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
+Run `lungo` to start the systray applet.
+
+Simply click on the systray applet to toggle it on and off.  
+The systray icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
 
 Lungo is:
 
 - Simple and minimal by design: No superfluous options and features, no complex background operations.
 - Distribution and desktop environment agnostic: Only requires either `systemd-logind` or `elogind`, not tied to any specific graphical / desktop environment.
 - Crash and memory safe: Uses a `logind` file descriptor lock (which is automatically released by the kernel on crash or kill), written in a memory safe language.
+
+Motivation:
+
+This project is generally inspired by [caffeine](https://launchpad.net/caffeine) / [caffeine-ng](https://codeberg.org/WhyNotHugo/caffeine-ng) (hence the [lungo](https://en.wikipedia.org/wiki/Lungo) name, as a reference) with some parts of the implementation inspired by [caffeine-applet](https://github.com/codevardhan/caffeine-applet).  
+The main motivation was to make a simple and minimal / "self-sufficient" implementation of a "caffeine" systray applet, with no arguably complex or "superfluous" mechanism / features and numerous runtime dependencies (unlike `caffeine` / `caffeine-ng`), **and** that isn't tied to a specific desktop / graphical environment (unlike `caffeine-applet` or the [caffeine gnome shell extension](https://github.com/eonpatapon/gnome-shell-extension-caffeine)).
 
 ## Installation
 
@@ -79,7 +86,7 @@ Run `lungo` to start the systray applet.
 
 To start it automatically at boot, either place the [`.desktop file`](https://github.com/Antiz96/lungo/blob/main/res/desktop/lungo.desktop) in `~/.config/autostart/` or `/etc/xdg/autostart/` (relies on [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)). Alternatively (if your graphical environment doesn't support XDG Autostart for instance), add the `lungo` command to your environment's auto-start method.
 
-Simply click the systray applet to toggle it on and off.  
+Simply click on the systray applet to toggle it on and off.  
 The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
 
 ## Documentation
