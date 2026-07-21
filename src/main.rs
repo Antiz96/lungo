@@ -30,6 +30,6 @@ fn main() {
     // Show name and version if the -V / --version arg is passed
     if args.version {
         version::show_version();
-        return;
+        //return;
     }
 }
