@@ -77,7 +77,7 @@ There are also shell completions available in the [`res/completions/`](https://g
 
 Run `lungo` to start the systray applet.
 
-To start it automatically at boot, either place the [`.desktop file`](https://github.com/Antiz96/lungo/blob/main/res/dekstop/lungo.desktop) in `~/.config/autostart/` or `/etc/xdg/autostart/` (relies on [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)). Alternatively (if your graphical environment doesn't support XDG Autostart for instance), add the `lungo` command to your environment's auto-start method.
+To start it automatically at boot, either place the [`.desktop file`](https://github.com/Antiz96/lungo/blob/main/res/desktop/lungo.desktop) in `~/.config/autostart/` or `/etc/xdg/autostart/` (relies on [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)). Alternatively (if your graphical environment doesn't support XDG Autostart for instance), add the `lungo` command to your environment's auto-start method.
 
 Simply click the systray applet to toggle it on and off.  
 The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
