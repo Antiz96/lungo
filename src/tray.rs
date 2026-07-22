@@ -57,8 +57,8 @@ impl ksni::Tray for LungoTray {
     // Build menu
     fn menu(&self) -> Vec<ksni::MenuItem<Self>> {
         vec![
-            // Checkable menu entry, toggling the creation and release of the inhibit file
-            // descriptor lock
+            // Checkable menu entry, reporting the current state and allowing to toggle the creation
+            // or release of the inhibit file descriptor lock
             CheckmarkItem {
                 label: "Enable".into(),
                 checked: self.inhibit_fd.is_some(),
