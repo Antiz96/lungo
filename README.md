@@ -11,12 +11,13 @@
 
 ## Description
 
-A simple systray applet to prevent your system from going idle or sleeping on demand.
+A simple systray applet to prevent the system from going idle or suspending on demand (including on laptop lid closure).
 
 Run `lungo` to start the systray applet.
 
 Simply click on the systray applet to toggle it on and off.  
-The systray icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
+The systray icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).  
+The state can also be consulted and toggled from the systray applet menu.
 
 Lungo is:
 
@@ -69,7 +70,9 @@ cd lungo
 cargo build --release
 ```
 
-The built binary will be located at `./target/release/lungo`.
+The built binary will be located at `./target/release/lungo`, place it somewhere in your `$PATH`.
+
+Place the icons from the [`res/icons/`](https://github.com/Antiz96/lungo/tree/main/res/icons) directory in an "icon compliant" folder on the system (such as `~/.icons/lungo/`, `~/.local/share/icons/lungo` or `/usr/share/icons/lungo/`, create it if needed). For packaging, using the `hicolor-icon-theme` folder (e.g. `/usr/share/icons/hicolor/scalable/apps/`) is an option.
 
 A `.desktop` file is available in the [`res/desktop/`](https://github.com/Antiz96/lungo/tree/main/res/desktop) directory, allowing to automatically start the systray applet at boot via [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart) (by placing it either in `~/.config/autostart/` or `/etc/xdg/autostart/`).
 
@@ -88,7 +91,8 @@ Run `lungo` to start the systray applet.
 To start it automatically at boot, either place the [`.desktop file`](https://github.com/Antiz96/lungo/blob/main/res/desktop/lungo.desktop) in `~/.config/autostart/` or `/etc/xdg/autostart/` (relies on [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)). Alternatively (if your graphical environment doesn't support XDG Autostart for instance), add the `lungo` command to your environment's auto-start method.
 
 Simply click on the systray applet to toggle it on and off.  
-The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
+The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).  
+The state can also be consulted and toggled from the systray applet menu.
 
 ## Documentation
 
