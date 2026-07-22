@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Lungo
-Comment=A simple systray applet to prevent your system from going idle or sleeping on demand
+Comment=A simple systray applet to prevent the system from going idle or suspending on demand
 Icon=lungo
 Type=Application
 Exec=lungo
