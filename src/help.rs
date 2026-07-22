@@ -9,7 +9,7 @@ pub fn show_help() {
     println!();
     println!("Simply click on the systray applet to toggle it on and off.");
     println!(
-        "The icon automatically changes to reflect the current state (\"empty cup\" icon if off, \"hot cup\" icon if on)."
+        "The systray icon automatically changes to reflect the current state (\"moon cup\" when disabled, \"power cup\" when enabled)."
     );
     println!("The state can also be consulted and toggled from the systray applet menu.");
     println!();

@@ -9,7 +9,9 @@ Lungo - A simple systray applet to prevent the system from going idle or suspend
 Run `lungo` to start the systray applet.
 
 Simply click on the systray applet to toggle it on and off.
-The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).
+
+The systray icon automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled).
+
 The state can also be consulted and toggled from the systray applet menu.
 
 # SYNOPSIS

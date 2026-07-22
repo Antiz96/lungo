@@ -15,9 +15,19 @@ A simple systray applet to prevent the system from going idle or suspending on d
 
 Run `lungo` to start the systray applet.
 
-Simply click on the systray applet to toggle it on and off.  
-The systray icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).  
-The state can also be consulted and toggled from the systray applet menu.
+Simply click on the systray applet to toggle it on and off.
+
+The systray icon (first one on the left) automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled):
+
+![off](https://github.com/user-attachments/assets/de08aa1f-ffbb-450e-a435-15daf35a75a7)
+
+![on](https://github.com/user-attachments/assets/e55dd973-504f-47fd-8ec7-502a7bc84e72)
+
+The state can also be consulted and toggled from the systray applet menu:
+
+![off_menu](https://github.com/user-attachments/assets/ed625721-b293-43ef-9b1f-8bf51663d3b8)
+
+![on_menu](https://github.com/user-attachments/assets/4f3014b5-d1aa-4fdf-82e6-c41dc1777df6)
 
 Lungo is:
 
@@ -90,9 +100,19 @@ Run `lungo` to start the systray applet.
 
 To start it automatically at boot, either place the [`.desktop file`](https://github.com/Antiz96/lungo/blob/main/res/desktop/lungo.desktop) in `~/.config/autostart/` or `/etc/xdg/autostart/` (relies on [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)). Alternatively (if your graphical environment doesn't support XDG Autostart for instance), add the `lungo` command to your environment's auto-start method.
 
-Simply click on the systray applet to toggle it on and off.  
-The icon automatically changes to reflect the current state ("empty cup" icon if off, "hot cup" icon if on).  
-The state can also be consulted and toggled from the systray applet menu.
+Simply click on the systray applet to toggle it on and off.
+
+The systray icon (first one on the left) automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled):
+
+![off](https://github.com/user-attachments/assets/de08aa1f-ffbb-450e-a435-15daf35a75a7)
+
+![on](https://github.com/user-attachments/assets/e55dd973-504f-47fd-8ec7-502a7bc84e72)
+
+The state can also be consulted and toggled from the systray applet menu:
+
+![off_menu](https://github.com/user-attachments/assets/ed625721-b293-43ef-9b1f-8bf51663d3b8)
+
+![on_menu](https://github.com/user-attachments/assets/4f3014b5-d1aa-4fdf-82e6-c41dc1777df6)
 
 ## Documentation
 
