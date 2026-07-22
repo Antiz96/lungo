@@ -53,7 +53,8 @@ The main motivation was to make a simple and minimal implementation of a "caffei
 
 ### Pre-compiled binary
 
-A (statically linked) pre-compiled binary for the `x86_64 (amd64)` architecture is distributed as a [release asset](https://github.com/Antiz96/lungo/releases/latest) (`lungo-<release_version>-x86_64`).
+A (statically linked) pre-compiled binary for the `x86_64 (amd64)` architecture is distributed as a [release asset](https://github.com/Antiz96/lungo/releases/latest) (`lungo-<release_version>-x86_64`).  
+Note that you at least additionally need the [icons](https://github.com/Antiz96/lungo/tree/main/res/icons) to be installed on your system for the systray applet to work properly, see the [next chapter](#build-from-source) for more details.
 
 The pre-compiled binary can be reproduced from source (in the sense of [reproducible builds](https://reproducible-builds.org)).  
 The build environment is created and fully documented via [repro-env](https://github.com/kpcyrd/repro-env), and is tracked in this repository.
@@ -82,7 +83,8 @@ cargo build --release
 
 The built binary will be located at `./target/release/lungo`, place it somewhere in your `$PATH`.
 
-Place the icons from the [`res/icons/`](https://github.com/Antiz96/lungo/tree/main/res/icons) directory in an "icon compliant" folder on the system (such as `~/.icons/lungo/`, `~/.local/share/icons/lungo` or `/usr/share/icons/lungo/`, create it if needed). For packaging, using the `hicolor-icon-theme` folder (e.g. `/usr/share/icons/hicolor/scalable/apps/`) is an option.
+Place the icons from the [`res/icons/`](https://github.com/Antiz96/lungo/tree/main/res/icons) directory in an "icon compliant" folder on the system (such as `~/.icons/lungo/`, `~/.local/share/icons/lungo/` or `/usr/share/icons/lungo/`, create it if needed).  
+For packaging, using the `hicolor-icon-theme` folder (e.g. `/usr/share/icons/hicolor/scalable/apps/`) is an option.
 
 A `.desktop` file is available in the [`res/desktop/`](https://github.com/Antiz96/lungo/tree/main/res/desktop) directory, allowing to automatically start the systray applet at boot via [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart) (by placing it either in `~/.config/autostart/` or `/etc/xdg/autostart/`).
 
@@ -98,7 +100,7 @@ There are also shell completions available in the [`res/completions/`](https://g
 
 Run `lungo` to start the systray applet.
 
-To start it automatically at boot, either place the [`.desktop file`](https://github.com/Antiz96/lungo/blob/main/res/desktop/lungo.desktop) in `~/.config/autostart/` or `/etc/xdg/autostart/` (relies on [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)). Alternatively (if your graphical environment doesn't support XDG Autostart for instance), add the `lungo` command to your environment's auto-start method.
+To start it automatically at boot, place the [`.desktop file`](https://github.com/Antiz96/lungo/blob/main/res/desktop/lungo.desktop) in `~/.config/autostart/` or `/etc/xdg/autostart/` (see [XDG Autostart](https://wiki.archlinux.org/title/XDG_Autostart)). Alternatively, if your graphical environment doesn't support XDG Autostart, add the `lungo` command to your environment's auto-start method.
 
 Simply click on the systray applet to toggle it on and off.
 
