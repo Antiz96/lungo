@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.1](https://github.com/Antiz96/lungo/releases/tag/v1.0.1) - 2026-07-23
+
+### Fixes
+
+- Update icon name in desktop file ([#11](https://github.com/Antiz96/lungo/pull/11)) - ([35046a1](https://github.com/Antiz96/lungo/commit/35046a18efe74283fc223b42448c0fa7741e54b5)) by @Antiz96
+
 ## [v1.0.0](https://github.com/Antiz96/lungo/releases/tag/v1.0.0) - 2026-07-22
 
 ### Features
