@@ -17,7 +17,7 @@ Run `lungo` to start the systray applet.
 
 Simply click on the systray applet to toggle it on and off.
 
-The systray icon automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled):
+The systray icon (first one on the left) automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled):
 
 ![off](https://github.com/user-attachments/assets/de08aa1f-ffbb-450e-a435-15daf35a75a7)
 
@@ -102,7 +102,7 @@ To start it automatically at boot, either place the [`.desktop file`](https://gi
 
 Simply click on the systray applet to toggle it on and off.
 
-The systray icon automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled):
+The systray icon (first one on the left) automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled):
 
 ![off](https://github.com/user-attachments/assets/de08aa1f-ffbb-450e-a435-15daf35a75a7)
 
