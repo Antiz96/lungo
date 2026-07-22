@@ -10,6 +10,14 @@ sha256 = "e7531589d13fcbacf3fe4a64624b2a62081f2532b690e77bbf88fbe0a5d1b75e"
 signature = "iHUEABYKAB0WIQQhkbiUMbrAqLlt6T0kR0DRfH/Q7AUCajfhYwAKCRAkR0DRfH/Q7BkBAQD/2Kj1l+/9hGeo0pQqRP6wVTKCVoILVRvSXiLGB1WXDAD8CmUyN8kDvGYasFDEbCmZL5aAwH+TF2NlkcSaJuGT8w0="
 
 [[package]]
+name = "cryptsetup"
+version = "2.8.7-1"
+system = "archlinux"
+url = "https://archive.archlinux.org/packages/c/cryptsetup/cryptsetup-2.8.7-1-x86_64.pkg.tar.zst"
+sha256 = "3e77b353731dd4432a7b451fca4b6880b89405c5914324b82a294f3c5fd75393"
+signature = "iHUEABYKAB0WIQQEKYl95fO9rFN6MGltQr3RFuAGjwUCamBS9AAKCRBtQr3RFuAGjwT4AQDHzLKDCNqqtcFbbhj+fC/FM4NAU7pJKBz7pvHEHdMxAwEAshQwT+J9FBhD9hytgZxEJ5yh7T+2KmyzKFkFLI1qCQg="
+
+[[package]]
 name = "gcc"
 version = "16.1.1+r346+g4e03491b401d-4"
 system = "archlinux"
