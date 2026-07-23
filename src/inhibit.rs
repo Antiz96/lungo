@@ -1,4 +1,7 @@
 //! Acquire inhibit file descriptor lock through logind
+//!
+//! The implementation is adapted from the "caffeine-applet" project
+//! See https://github.com/Antiz96/lungo/blob/main/THIRD-PARTY-NOTICES.md for details
 
 use std::os::fd::OwnedFd;
 use zbus::blocking::Connection;
