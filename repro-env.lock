@@ -1,5 +1,5 @@
 [container]
-image = "docker.io/archlinux/archlinux@sha256:7e4b2566cd061f8ceea64cde559bcfc53daab4a556668c7b57529d313f646168"
+image = "docker.io/archlinux/archlinux@sha256:94424bd54ecb2d5de41db17a2fe7a86f9f7e456b2b95fcbc45a7aa1a0b5aebbd"
 
 [[package]]
 name = "compiler-rt"
@@ -8,14 +8,6 @@ system = "archlinux"
 url = "https://archive.archlinux.org/packages/c/compiler-rt/compiler-rt-22.1.8-1-x86_64.pkg.tar.zst"
 sha256 = "e7531589d13fcbacf3fe4a64624b2a62081f2532b690e77bbf88fbe0a5d1b75e"
 signature = "iHUEABYKAB0WIQQhkbiUMbrAqLlt6T0kR0DRfH/Q7AUCajfhYwAKCRAkR0DRfH/Q7BkBAQD/2Kj1l+/9hGeo0pQqRP6wVTKCVoILVRvSXiLGB1WXDAD8CmUyN8kDvGYasFDEbCmZL5aAwH+TF2NlkcSaJuGT8w0="
-
-[[package]]
-name = "cryptsetup"
-version = "2.8.7-1"
-system = "archlinux"
-url = "https://archive.archlinux.org/packages/c/cryptsetup/cryptsetup-2.8.7-1-x86_64.pkg.tar.zst"
-sha256 = "3e77b353731dd4432a7b451fca4b6880b89405c5914324b82a294f3c5fd75393"
-signature = "iHUEABYKAB0WIQQEKYl95fO9rFN6MGltQr3RFuAGjwUCamBS9AAKCRBtQr3RFuAGjwT4AQDHzLKDCNqqtcFbbhj+fC/FM4NAU7pJKBz7pvHEHdMxAwEAshQwT+J9FBhD9hytgZxEJ5yh7T+2KmyzKFkFLI1qCQg="
 
 [[package]]
 name = "gcc"

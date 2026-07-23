@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.2](https://github.com/Antiz96/lungo/releases/tag/v1.0.2) - 2026-07-23
+
+### Miscellaneous
+
+- *(license)* Add THIRD-PARTY-NOTICES.md ([#12](https://github.com/Antiz96/lungo/pull/12)) - ([1bae472](https://github.com/Antiz96/lungo/commit/1bae472208665a1c50c9d85ee20aa516a5cb4abf)) by @Antiz96
+
 ## [v1.0.1](https://github.com/Antiz96/lungo/releases/tag/v1.0.1) - 2026-07-23
 
 ### Fixes
