@@ -3,12 +3,13 @@
 //! The implementation is adapted from the "caffeine-applet" project
 //! See https://github.com/Antiz96/lungo/blob/main/THIRD-PARTY-NOTICES.md for details
 
+use anyhow::Context;
 use std::os::fd::OwnedFd;
 use zbus::blocking::Connection;
 use zbus::zvariant::OwnedFd as ZbusFd;
 
-pub fn acquire_inhibit() -> Result<OwnedFd, Box<dyn std::error::Error>> {
-    let conn = Connection::system()?;
+pub fn acquire_inhibit() -> anyhow::Result<OwnedFd> {
+    let conn = Connection::system().context("Failed to connect to the system D-Bus")?;
 
     let reply: ZbusFd = conn
         .call_method(
@@ -22,9 +23,11 @@ pub fn acquire_inhibit() -> Result<OwnedFd, Box<dyn std::error::Error>> {
                 "Keeping the system awake",
                 "block",
             ),
-        )?
+        )
+        .context("Failed to call logind Inhibit()")?
         .body()
-        .deserialize()?;
+        .deserialize()
+        .context("Failed to deserialize logind reply")?;
 
     Ok(reply.into())
 }

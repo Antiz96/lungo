@@ -26,6 +26,20 @@ The state can also be consulted and toggled from the systray applet menu.
 *-h, --help*
 	Display the help message.
 
+# EXIT STATUS
+
+*0*
+	Ok.
+
+*1*
+	Failed to create or acquire the lockfile.
+
+*2*
+	Failed to create the tokio runtime.
+
+*3*
+	Failed to start the systray applet.
+
 # BUGS
 
 Please report bugs to the GitHub page: https://github.com/Antiz96/lungo
