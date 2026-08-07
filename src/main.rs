@@ -2,8 +2,8 @@
 
 use clap::Parser;
 use log::error;
-use std::io::ErrorKind;
 use std::process;
+use tokio::runtime;
 
 mod help;
 mod inhibit;
@@ -11,11 +11,10 @@ mod lockfile;
 mod tray;
 mod version;
 
-// Argument parser
+// Arguments definition
 #[derive(Parser)]
 #[command(disable_help_flag = true, disable_version_flag = true)]
 struct Args {
-    // Options / flags
     #[arg(short = 'h', long)]
     help: bool,
 
@@ -23,8 +22,7 @@ struct Args {
     version: bool,
 }
 
-#[tokio::main]
-async fn main() {
+fn main() {
     // Initialize logger
     env_logger::init();
 
@@ -46,16 +44,23 @@ async fn main() {
     // Create (if needed) and acquire lockfile
     // Exit if there's already an instance running
     // or if there was an issue creating or acquiring the lockfile (e.g. permission issue)
-    let _lock = lockfile::acquire_lockfile().unwrap_or_else(|error| {
-        if error.kind() == ErrorKind::AlreadyExists {
-            error!("Another instance of lungo is already running");
-        } else {
-            error!("Failed to acquire lockfile: {error}");
-        }
-
+    lockfile::acquire_lockfile().unwrap_or_else(|error| {
+        error!("{error:?}");
         process::exit(1);
     });
 
-    // Start systray applet
-    tray::run().await;
+    // Create multi-threaded tokio runtime
+    let tokio_runtime = runtime::Builder::new_multi_thread()
+        .enable_all()
+        .build()
+        .unwrap_or_else(|error| {
+            error!("Failed to create Tokio runtime: {error}");
+            process::exit(2);
+        });
+
+    // Start the systray applet
+    tokio_runtime.block_on(tray::run()).unwrap_or_else(|error| {
+        error!("{error:?}");
+        process::exit(3);
+    });
 }

@@ -3,9 +3,10 @@
 //! https://github.com/iovxw/ksni
 //! https://crates.io/crates/ksni
 
+use anyhow::Context;
 use ksni::TrayMethods;
 use ksni::menu::*;
-use log::{debug, info};
+use log::{debug, error, info};
 use std::future;
 use std::os::fd::OwnedFd;
 use std::process;
@@ -93,7 +94,7 @@ impl LungoTray {
                     info!("Inhibitor enabled");
                 }
                 Err(error) => {
-                    log::error!("Unable to acquire inhibitor: {error}");
+                    error!("Unable to acquire inhibitor: {error}");
                 }
             }
         }
@@ -101,15 +102,17 @@ impl LungoTray {
 }
 
 // Starting the Systray Applet
-pub async fn run() {
+pub async fn run() -> anyhow::Result<()> {
     let tray = LungoTray { inhibit_fd: None };
 
     tray.spawn()
         .await
-        .expect("Unable to start the systray applet");
+        .context("Unable to start the systray applet")?;
 
     info!("Systray applet started");
 
     // Run forever
-    future::pending().await
+    future::pending::<()>().await;
+
+    Ok(())
 }
