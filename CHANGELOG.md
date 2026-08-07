@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.3](https://github.com/Antiz96/lungo/releases/tag/v1.0.3) - 2026-08-07
+
+### Miscellaneous
+
+- *(deps)* Update Rust crate clap to 4.6.6 ([#16](https://github.com/Antiz96/lungo/pull/16)) - ([da24540](https://github.com/Antiz96/lungo/commit/da24540525db747b00614ceb3d85eafc539dcc2d)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#15](https://github.com/Antiz96/lungo/pull/15)) - ([b10cff0](https://github.com/Antiz96/lungo/commit/b10cff0278efc21165de289c9f29f17014e06ff0)) by @renovate[bot]
+- *(deps)* Update Rust crate clap to 4.6.5 ([#14](https://github.com/Antiz96/lungo/pull/14)) - ([66221d4](https://github.com/Antiz96/lungo/commit/66221d4543df712e45022ac3ab57de1eeb740ff7)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#13](https://github.com/Antiz96/lungo/pull/13)) - ([0bae897](https://github.com/Antiz96/lungo/commit/0bae8970f6f3e888a4858c8767cf620a3078750c)) by @renovate[bot]
+- General code refinement ([#17](https://github.com/Antiz96/lungo/pull/17)) - ([cf30552](https://github.com/Antiz96/lungo/commit/cf3055244928a3963c6a6d2a247c68dfec656909)) by @Antiz96
+
 ## [v1.0.2](https://github.com/Antiz96/lungo/releases/tag/v1.0.2) - 2026-07-23
 
 ### Miscellaneous
