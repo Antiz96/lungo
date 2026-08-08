@@ -23,9 +23,6 @@ struct Args {
 }
 
 fn main() {
-    // Initialize logger
-    env_logger::init();
-
     // Parse arguments
     let args = Args::parse();
 
@@ -40,6 +37,9 @@ fn main() {
         version::show_version();
         return;
     }
+
+    // Initialize logger
+    env_logger::init();
 
     // Create (if needed) and acquire lockfile
     // Exit if there's already an instance running
