@@ -26,12 +26,7 @@ pub fn acquire_lockfile() -> anyhow::Result<File> {
         .write(true)
         .truncate(false)
         .open(&lockfile_path)
-        .with_context(|| {
-            format!(
-                "Failed to open the {} lockfile",
-                lockfile_path.display()
-            )
-        })?;
+        .with_context(|| format!("Failed to open the {} lockfile", lockfile_path.display()))?;
 
     lockfile.try_lock_exclusive().map_err(|error| {
         if error.kind() == ErrorKind::WouldBlock {
