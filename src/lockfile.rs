@@ -14,7 +14,7 @@ pub fn acquire_lockfile() -> anyhow::Result<File> {
 
     fs::create_dir_all(&cachedir).with_context(|| {
         format!(
-            "Failed to create the \"{}\" cache directory",
+            "Failed to create the {} cache directory",
             cachedir.display()
         )
     })?;
@@ -26,19 +26,14 @@ pub fn acquire_lockfile() -> anyhow::Result<File> {
         .write(true)
         .truncate(false)
         .open(&lockfile_path)
-        .with_context(|| {
-            format!(
-                "Failed to open the \"{}\" lockfile",
-                lockfile_path.display()
-            )
-        })?;
+        .with_context(|| format!("Failed to open the {} lockfile", lockfile_path.display()))?;
 
     lockfile.try_lock_exclusive().map_err(|error| {
         if error.kind() == ErrorKind::WouldBlock {
             anyhow!(error).context("Another instance of Lungo is already running")
         } else {
             anyhow!(error).context(format!(
-                "Failed to acquire lock on the \"{}\" lockfile",
+                "Failed to acquire lock on the {} lockfile",
                 lockfile_path.display()
             ))
         }
