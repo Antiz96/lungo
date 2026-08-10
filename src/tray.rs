@@ -94,7 +94,7 @@ impl LungoTray {
                     info!("Inhibitor enabled");
                 }
                 Err(error) => {
-                    error!("Unable to acquire inhibitor: {error}");
+                    error!("Failed to acquire inhibitor: {error}");
                 }
             }
         }
@@ -107,7 +107,7 @@ pub async fn run() -> anyhow::Result<()> {
 
     tray.spawn()
         .await
-        .context("Unable to start the systray applet")?;
+        .context("Failed to start the systray applet")?;
 
     info!("Systray applet started");
 
