@@ -28,17 +28,13 @@ The state can also be consulted and toggled from the systray applet menu.
 
 # EXIT STATUS
 
-*0*
-	Ok.
+*0* Ok.
 
-*1*
-	Failed to create or acquire the lockfile.
+*1* Failed to create or acquire the lockfile.
 
-*2*
-	Failed to create the tokio runtime.
+*2* Failed to create the tokio runtime.
 
-*3*
-	Failed to start the systray applet.
+*3* Failed to start the systray applet.
 
 # BUGS
 
