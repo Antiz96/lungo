@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.4](https://github.com/Antiz96/lungo/releases/tag/v1.0.4) - 2026-08-10
+
+### Styling
+
+- *(man)* Remove useless line breaks ([#22](https://github.com/Antiz96/lungo/pull/22)) - ([ba2a064](https://github.com/Antiz96/lungo/commit/ba2a064624dfd72abd0ac7e7fdd0978304ee0d93)) by @Antiz96
+- Drop useless quotes in error msg ([#18](https://github.com/Antiz96/lungo/pull/18)) - ([b66b2ac](https://github.com/Antiz96/lungo/commit/b66b2acb50f533b63a880fa0c15823983ffb629a)) by @Antiz96
+
+### Miscellaneous
+
+- *(deps)* Lock file maintenance ([#21](https://github.com/Antiz96/lungo/pull/21)) - ([f411ad3](https://github.com/Antiz96/lungo/commit/f411ad3b12885dcbb50ef2372ad17eb81cd7709d)) by @renovate[bot]
+- *(deps)* Update Rust crate zbus to 5.19.0 ([#20](https://github.com/Antiz96/lungo/pull/20)) - ([4632a25](https://github.com/Antiz96/lungo/commit/4632a253730b635f35953cfa79e4af3bbae9bb13)) by @renovate[bot]
+- Improve wording of some errors message ([#23](https://github.com/Antiz96/lungo/pull/23)) - ([d86409d](https://github.com/Antiz96/lungo/commit/d86409dcf6418e1afb17752b24025b7e309aeab2)) by @Antiz96
+- Only initialize logger if needed ([#19](https://github.com/Antiz96/lungo/pull/19)) - ([80ab8d9](https://github.com/Antiz96/lungo/commit/80ab8d9c8eae787a663d17a989043cd125c29599)) by @Antiz96
+
 ## [v1.0.3](https://github.com/Antiz96/lungo/releases/tag/v1.0.3) - 2026-08-07
 
 ### Miscellaneous
