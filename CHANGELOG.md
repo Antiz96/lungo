@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.5](https://github.com/Antiz96/lungo/releases/tag/v1.0.5) - 2026-08-15
+
+### Fixes
+
+- *(tray)* Apply a small startup delay by default ([#24](https://github.com/Antiz96/lungo/pull/24)) - ([8797bf6](https://github.com/Antiz96/lungo/commit/8797bf666955ed7cf657de5d6cb0e8811fa3748d)) by @Antiz96
+
 ## [v1.0.4](https://github.com/Antiz96/lungo/releases/tag/v1.0.4) - 2026-08-10
 
 ### Styling
