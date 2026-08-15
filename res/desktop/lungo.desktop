@@ -4,6 +4,6 @@ Comment=A simple systray applet to prevent the system from going idle or suspend
 Icon=lungo-on
 Terminal=false
 Type=Application
-Exec=lungo
+Exec=/bin/sh -c "sleep 3 && lungo"
 Categories=Utility
 NoDisplay=true
