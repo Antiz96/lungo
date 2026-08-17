@@ -1,4 +1,4 @@
-lungo(1) ["Lungo 1.0.5" ["Lungo Manual"]]
+lungo(1) ["Lungo 1.0.6" ["Lungo Manual"]]
 
 # NAME
 

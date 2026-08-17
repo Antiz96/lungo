@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.6](https://github.com/Antiz96/lungo/releases/tag/v1.0.6) - 2026-08-17
+
+### Fixes
+
+- Properly retain lockfile ([#26](https://github.com/Antiz96/lungo/pull/26)) - ([417f0aa](https://github.com/Antiz96/lungo/commit/417f0aa74236588bf2d9cf28d07990edfafeda35)) by @Antiz96
+
+### Miscellaneous
+
+- *(deps)* Lock file maintenance ([#25](https://github.com/Antiz96/lungo/pull/25)) - ([8bb3cff](https://github.com/Antiz96/lungo/commit/8bb3cfff27148f9c0ae2b1f3e8214b6a97e9d3c5)) by @renovate[bot]
+
 ## [v1.0.5](https://github.com/Antiz96/lungo/releases/tag/v1.0.5) - 2026-08-15
 
 ### Fixes
