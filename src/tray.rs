@@ -44,13 +44,13 @@ impl ksni::Tray for LungoTray {
 
     // Set title
     fn title(&self) -> String {
-        "Lungo".into()
+        self.id()
     }
 
     // Set tooltip
     fn tool_tip(&self) -> ksni::ToolTip {
         ksni::ToolTip {
-            title: "Lungo".into(),
+            title: self.id(),
             ..Default::default()
         }
     }
