@@ -25,6 +25,11 @@ impl ksni::Tray for LungoTray {
         "Lungo".into()
     }
 
+    // Set category
+    fn category(&self) -> ksni::Category {
+        ksni::Category::ApplicationStatus
+    }
+
     // Set icon
     fn icon_name(&self) -> String {
         let icon = if self.inhibit_fd.is_some() {
