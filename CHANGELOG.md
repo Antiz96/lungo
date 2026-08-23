@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.7](https://github.com/Antiz96/lungo/releases/tag/v1.0.7) - 2026-08-23
+
+### Miscellaneous
+
+- *(deps)* Update Rust crate log to 0.4.34 ([#27](https://github.com/Antiz96/lungo/pull/27)) - ([34c16a7](https://github.com/Antiz96/lungo/commit/34c16a706f69a502caeb95e342bf01fd15967b5c)) by @renovate[bot]
+- *(tray)* Reuse id for title and tooltip title ([#29](https://github.com/Antiz96/lungo/pull/29)) - ([923a8c7](https://github.com/Antiz96/lungo/commit/923a8c782d2683fb8cac89f8b5f05c08d88308bf)) by @Antiz96
+- *(tray)* Add item category ([#28](https://github.com/Antiz96/lungo/pull/28)) - ([61bf330](https://github.com/Antiz96/lungo/commit/61bf330bece82e351114dc6cec7dcbfe2acdd687)) by @Antiz96
+
 ## [v1.0.6](https://github.com/Antiz96/lungo/releases/tag/v1.0.6) - 2026-08-17
 
 ### Fixes
