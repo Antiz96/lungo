@@ -1,7 +1,7 @@
 [package]
 name = "lungo"
 version = "1.0.7"
-authors = ["Robin Candau <robincandau@protonmail.com>"]
+authors = ["Robin Candau <robincandau@mailbox.org>"]
 edition = "2024"
 description = "A simple systray applet to prevent the system from going idle or suspending on demand"
 license = "GPL-3.0-or-later"

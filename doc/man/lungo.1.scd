@@ -42,4 +42,4 @@ Please report bugs to the GitHub page: https://github.com/Antiz96/lungo
 
 # AUTHOR
 
-Robin Candau <robincandau@protonmail.com>
+Robin Candau <robincandau@mailbox.org>
