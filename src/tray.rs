@@ -30,6 +30,11 @@ impl ksni::Tray for LungoTray {
         ksni::Category::ApplicationStatus
     }
 
+    // Set status
+    fn status(&self) -> ksni::Status {
+        ksni::Status::Active
+    }
+
     // Set icon
     fn icon_name(&self) -> String {
         let icon = if self.inhibit_fd.is_some() {
