@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.8](https://github.com/Antiz96/lungo/releases/tag/v1.0.8) - 2026-10-05
+
+### Miscellaneous
+
+- *(deps)* Lock file maintenance ([#41](https://github.com/Antiz96/lungo/pull/41)) - ([877f6d6](https://github.com/Antiz96/lungo/commit/877f6d6d21e844d3156dbf01aebf00ad5e3d27df)) by @renovate[bot]
+- *(deps)* Update Rust crate tokio to 1.53.2 ([#40](https://github.com/Antiz96/lungo/pull/40)) - ([664661b](https://github.com/Antiz96/lungo/commit/664661b9175ea1cc938e4cf7c66b40f7c237994f)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#39](https://github.com/Antiz96/lungo/pull/39)) - ([a8d76ef](https://github.com/Antiz96/lungo/commit/a8d76ef6dc4a1ca15e30269bcc7eb06085f4b416)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#38](https://github.com/Antiz96/lungo/pull/38)) - ([9a709d9](https://github.com/Antiz96/lungo/commit/9a709d94f20a76073ff55638c27fe72d24eed99e)) by @renovate[bot]
+- *(deps)* Update Rust crate clap to 4.6.7 ([#36](https://github.com/Antiz96/lungo/pull/36)) - ([bfaa629](https://github.com/Antiz96/lungo/commit/bfaa629936016a1abeb71eefcf1f9e3293482a07)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#35](https://github.com/Antiz96/lungo/pull/35)) - ([69ae665](https://github.com/Antiz96/lungo/commit/69ae6654cab16f9a4806a283cf9e7810cb3471c4)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#34](https://github.com/Antiz96/lungo/pull/34)) - ([4c997a2](https://github.com/Antiz96/lungo/commit/4c997a28d69424fd2fc4dc926d319ce77e1c7056)) by @renovate[bot]
+- *(deps)* Update Rust crate dirs to 7.0.0 ([#33](https://github.com/Antiz96/lungo/pull/33)) - ([0dda123](https://github.com/Antiz96/lungo/commit/0dda123691544f89cc991eb9eb4ca0fa7e256cc2)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#31](https://github.com/Antiz96/lungo/pull/31)) - ([bce9c3e](https://github.com/Antiz96/lungo/commit/bce9c3ecb1e7958ee1bd12899413e3c07441fd08)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#30](https://github.com/Antiz96/lungo/pull/30)) - ([ca5007f](https://github.com/Antiz96/lungo/commit/ca5007f5f39e0ee5c61a0ef13fc8bebb48204c2c)) by @renovate[bot]
+- *(tray)* Set SNI status ([#37](https://github.com/Antiz96/lungo/pull/37)) - ([318731a](https://github.com/Antiz96/lungo/commit/318731abda0af63dacf0bb2c5f2ba8d49af2e356)) by @Antiz96
+- Update email address ([#32](https://github.com/Antiz96/lungo/pull/32)) - ([2a12932](https://github.com/Antiz96/lungo/commit/2a12932e53d5de52ea2f1a7697f0c1a1f17bd303)) by @Antiz96
+
 ## [v1.0.7](https://github.com/Antiz96/lungo/releases/tag/v1.0.7) - 2026-08-23
 
 ### Miscellaneous
