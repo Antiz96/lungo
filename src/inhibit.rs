@@ -5,29 +5,35 @@
 
 use anyhow::Context;
 use std::os::fd::OwnedFd;
-use zbus::blocking::Connection;
-use zbus::zvariant::OwnedFd as ZbusFd;
+use zbus::Connection;
+use zbus::OwnedFd as ZbusFd;
+use zbus::block_on;
 
 pub fn acquire_inhibit() -> anyhow::Result<OwnedFd> {
-    let conn = Connection::system().context("Failed to connect to the system D-Bus")?;
+    block_on(async {
+        let connection = Connection::system()
+            .await
+            .context("Failed to connect to the system D-Bus")?;
 
-    let reply: ZbusFd = conn
-        .call_method(
-            Some("org.freedesktop.login1"),
-            "/org/freedesktop/login1",
-            Some("org.freedesktop.login1.Manager"),
-            "Inhibit",
-            &(
-                "idle:sleep:handle-lid-switch",
-                "Lungo",
-                "Keeping the system awake",
-                "block",
-            ),
-        )
-        .context("Failed to call logind Inhibit()")?
-        .body()
-        .deserialize()
-        .context("Failed to deserialize logind reply")?;
+        let reply: ZbusFd = connection
+            .call_method(
+                Some("org.freedesktop.login1"),
+                "/org/freedesktop/login1",
+                Some("org.freedesktop.login1.Manager"),
+                "Inhibit",
+                &(
+                    "idle:sleep:handle-lid-switch",
+                    "Lungo",
+                    "Keeping the system awake",
+                    "block",
+                ),
+            )
+            .await
+            .context("Failed to call logind Inhibit()")?
+            .body()
+            .deserialize()
+            .context("Failed to deserialize logind reply")?;
 
-    Ok(reply.into())
+        Ok(reply.into())
+    })
 }
