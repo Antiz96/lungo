@@ -15,7 +15,7 @@ fs2 = "0.4.3"
 ksni = "0.3.6"
 log = "0.4.33"
 tokio = "1.53.1"
-zbus = "5.18.0"
+zbus = "6.0.0"
 
 [dev-dependencies]
 assert_cmd = "2.0.0"
