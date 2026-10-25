@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.9](https://github.com/Antiz96/lungo/releases/tag/v1.0.9) - 2026-10-25
+
+### Fixes
+
+- Store lockfile in runtime dir ([#51](https://github.com/Antiz96/lungo/pull/51)) - ([bc1d472](https://github.com/Antiz96/lungo/commit/bc1d472ce14857586b2a11f2061ccd8345fa6805)) by @Antiz96
+
+### Miscellaneous
+
+- *(CONTRIBUTING)* Add an AI Policy ([#43](https://github.com/Antiz96/lungo/pull/43)) - ([eed3e47](https://github.com/Antiz96/lungo/commit/eed3e470df3973bf117a007a498ab9bb7728e085)) by @Antiz96
+- *(deps)* Update Rust crate zbus to 6.1.0 ([#50](https://github.com/Antiz96/lungo/pull/50)) - ([73ef0c8](https://github.com/Antiz96/lungo/commit/73ef0c84f2ee2d9d29023ad1a3f29907225bedcb)) by @renovate[bot]
+- *(deps)* Update Rust crate tokio to 1.54.1 ([#49](https://github.com/Antiz96/lungo/pull/49)) - ([00b60c2](https://github.com/Antiz96/lungo/commit/00b60c2707b24ac49bc9cc4c62e8daeef3bbdd8b)) by @renovate[bot]
+- *(deps)* Update Rust crate tokio to 1.54.0 ([#48](https://github.com/Antiz96/lungo/pull/48)) - ([66edb4b](https://github.com/Antiz96/lungo/commit/66edb4bf822e49c428630297ce4457f665452bab)) by @renovate[bot]
+- *(deps)* Update Rust crate ksni to 0.3.7 ([#47](https://github.com/Antiz96/lungo/pull/47)) - ([f3adf3a](https://github.com/Antiz96/lungo/commit/f3adf3a156613f706cf6cfbe5539059cb3987909)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#46](https://github.com/Antiz96/lungo/pull/46)) - ([d13ed64](https://github.com/Antiz96/lungo/commit/d13ed646aeb6569afcc7c2d8a54adb4b797693f5)) by @renovate[bot]
+- *(deps)* Update Rust crate zbus to 6.0.0 ([#45](https://github.com/Antiz96/lungo/pull/45)) - ([e709ec0](https://github.com/Antiz96/lungo/commit/e709ec07b7afbd1cd32f80445ca2df35ed912303)) by @renovate[bot]
+- *(deps)* Update Rust crate tokio to 1.53.3 ([#44](https://github.com/Antiz96/lungo/pull/44)) - ([747e3de](https://github.com/Antiz96/lungo/commit/747e3dece370a25f980cec8bb7b76b420a055740)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#42](https://github.com/Antiz96/lungo/pull/42)) - ([dd5de52](https://github.com/Antiz96/lungo/commit/dd5de529a8ede1461fec3c603c61386f04e854a6)) by @renovate[bot]
+
 ## [v1.0.8](https://github.com/Antiz96/lungo/releases/tag/v1.0.8) - 2026-10-05
 
 ### Miscellaneous
