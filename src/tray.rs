@@ -71,7 +71,7 @@ impl ksni::Tray for LungoTray {
             // Checkable menu entry, reporting the current state and allowing to toggle the creation
             // or release of the inhibit file descriptor lock
             CheckmarkItem {
-                label: "Enable".into(),
+                label: "Enabled".into(),
                 checked: self.inhibit_fd.is_some(),
                 activate: Box::new(|this: &mut Self| this.toggle()),
                 ..Default::default()
