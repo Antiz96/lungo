@@ -19,15 +19,15 @@ Simply click on the systray applet to toggle it on and off.
 
 The systray icon (first one on the left) automatically changes to reflect the current state ("moon cup" when disabled, "power cup" when enabled):
 
-![off](https://github.com/user-attachments/assets/de08aa1f-ffbb-450e-a435-15daf35a75a7)
+![off](https://github.com/user-attachments/assets/d3c287e6-e627-49a3-97af-382fbf32f951)
 
-![on](https://github.com/user-attachments/assets/e55dd973-504f-47fd-8ec7-502a7bc84e72)
+![on](https://github.com/user-attachments/assets/c2bdda3d-0a7f-4447-a786-284d59c3f2bb)
 
 The state can also be consulted and toggled from the systray applet menu:
 
-![off_menu](https://github.com/user-attachments/assets/ed625721-b293-43ef-9b1f-8bf51663d3b8)
+![off_menu](https://github.com/user-attachments/assets/78ffb606-5d17-489b-9caf-842f51ea2b8a)
 
-![on_menu](https://github.com/user-attachments/assets/4f3014b5-d1aa-4fdf-82e6-c41dc1777df6)
+![on_menu](https://github.com/user-attachments/assets/75544690-6f05-46d6-84f9-3f99a73e72c1)
 
 Lungo is:
 
