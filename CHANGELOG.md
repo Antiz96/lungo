@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.10](https://github.com/Antiz96/lungo/releases/tag/v1.0.10) - 2026-11-01
+
+### Styling
+
+- Update the menu entry label from "Enable" to "Enabled" ([#53](https://github.com/Antiz96/lungo/pull/53)) - ([49aea43](https://github.com/Antiz96/lungo/commit/49aea434953d472de769c8a41e703f43bdaa2ba7)) by @Antiz96
+
+### Miscellaneous
+
+- *(deps)* Lock file maintenance ([#56](https://github.com/Antiz96/lungo/pull/56)) - ([03148e6](https://github.com/Antiz96/lungo/commit/03148e6de7da6f64bcd21cb61c5de1146a2af2d4)) by @Antiz96
+- *(deps)* Update Rust crate log to 0.4.35 ([#55](https://github.com/Antiz96/lungo/pull/55)) - ([18b838b](https://github.com/Antiz96/lungo/commit/18b838be274583529a08b999c73f7b21ef42e92e)) by @renovate[bot]
+- *(deps)* Update Rust crate zbus to 6.2.0 ([#54](https://github.com/Antiz96/lungo/pull/54)) - ([7afe71b](https://github.com/Antiz96/lungo/commit/7afe71bced29364a19114ae6f63616149335feed)) by @renovate[bot]
+- *(deps)* Lock file maintenance ([#52](https://github.com/Antiz96/lungo/pull/52)) - ([b3b7f20](https://github.com/Antiz96/lungo/commit/b3b7f20950eaeab289873a2856b291b6d47fec5f)) by @renovate[bot]
+
 ## [v1.0.9](https://github.com/Antiz96/lungo/releases/tag/v1.0.9) - 2026-10-25
 
 ### Fixes
